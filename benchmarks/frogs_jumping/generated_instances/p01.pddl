@@ -1,0 +1,31 @@
+(define (problem frogs-3v3)
+  (:domain frogs-jumping)
+  (:objects
+    l1 l2 l3 - leftfrog
+    r1 r2 r3 - rightfrog
+    p1 p2 p3 p4 p5 p6 p7 - lilypad)
+  (:init
+    (next p1 p2)
+    (next p2 p3)
+    (next p3 p4)
+    (next p4 p5)
+    (next p5 p6)
+    (next p6 p7)
+    (at l1 p1)
+    (at l2 p2)
+    (at l3 p3)
+    (empty p4)
+    (at r1 p5)
+    (at r2 p6)
+    (at r3 p7)
+  )
+  (:goal (and
+    (at r1 p1)
+    (at r2 p2)
+    (at r3 p3)
+    (empty p4)
+    (at l1 p5)
+    (at l2 p6)
+    (at l3 p7)
+  ))
+)

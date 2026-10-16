@@ -1,0 +1,53 @@
+[
+  [
+    {
+      "id": "ferry_ferry-l2-c2_p01_0",
+      "group": "applicable_actions_mc",
+      "context": "This is a ferry domain, where the task is to transport cars from their start to their goal locations, using a ferry. Each location is accessible by ferry from each other location. The cars can be debarked or boarded, and the ferry can carry only one car at a time. \nThere are 2 locations and 2 cars, numbered consecutively. \nCurrently, the ferry at l0 and it is empty. The cars are at locations as follows: c1 and c0 are at l0. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. debark the car c1 from the ferry to location l0. \nB. board the car c1 at location l1 on to the ferry. \nC. travel by sea from location l0 to location l1. \nD. board the car c0 at the location l1.",
+      "answer": "C."
+    },
+    {
+      "id": "ferry_ferry-l2-c2_p01_1",
+      "group": "applicable_actions_mc",
+      "context": "This is a ferry domain, where the task is to transport cars from their start to their goal locations, using a ferry. Each location is accessible by ferry from each other location. The cars can be debarked or boarded, and the ferry can carry only one car at a time. \nThere are 2 locations and 2 cars, numbered consecutively. \nCurrently, the ferry at l0, with the car c0 on board. The cars are at locations as follows: c1 is at l0. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. board the car c0 at location l1. \nB. board the car c0 at location l0. \nC. debark the car c1 to location l0 from the ferry. \nD. sail from location l0 to location l1.",
+      "answer": "D."
+    },
+    {
+      "id": "ferry_ferry-l2-c2_p01_2",
+      "group": "applicable_actions_mc",
+      "context": "This is a ferry domain, where the task is to transport cars from their start to their goal locations, using a ferry. Each location is accessible by ferry from each other location. The cars can be debarked or boarded, and the ferry can carry only one car at a time. \nThere are 2 locations and 2 cars, numbered consecutively. \nCurrently, the ferry at l1, with the car c0 on board. The cars are at locations as follows: c1 is at l0. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. load the car c1 at location l1 on to the ferry. \nB. unload the car c1 from the ferry to location l1. \nC. debark the car c0 from the ferry to location l0. \nD. debark the car c0 from the ferry to location l1.",
+      "answer": "D."
+    },
+    {
+      "id": "ferry_ferry-l2-c2_p01_3",
+      "group": "applicable_actions_mc",
+      "context": "This is a ferry domain, where the task is to transport cars from their start to their goal locations, using a ferry. Each location is accessible by ferry from each other location. The cars can be debarked or boarded, and the ferry can carry only one car at a time. \nThere are 2 locations and 2 cars, numbered consecutively. \nCurrently, the ferry at l1 and it is empty. The cars are at locations as follows: c1 is at l0; c0 is at l1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. board the car c1 at the location l1. \nB. board the car c0 at location l0 on to the ferry. \nC. travel by sea from location l1 to location l0. \nD. load the car c1 at location l0 on to the ferry.",
+      "answer": "C."
+    },
+    {
+      "id": "ferry_ferry-l2-c2_p01_4",
+      "group": "applicable_actions_mc",
+      "context": "This is a ferry domain, where the task is to transport cars from their start to their goal locations, using a ferry. Each location is accessible by ferry from each other location. The cars can be debarked or boarded, and the ferry can carry only one car at a time. \nThere are 2 locations and 2 cars, numbered consecutively. \nCurrently, the ferry at l0 and it is empty. The cars are at locations as follows: c1 is at l0; c0 is at l1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. board car c0 at location l0. \nB. travel by sea from location l1 to location l0. \nC. embark the car c1 at location l0 on to the ferry. \nD. debark the car c0 to location l1 from the ferry.",
+      "answer": "C."
+    },
+    {
+      "id": "ferry_ferry-l2-c2_p01_5",
+      "group": "applicable_actions_mc",
+      "context": "This is a ferry domain, where the task is to transport cars from their start to their goal locations, using a ferry. Each location is accessible by ferry from each other location. The cars can be debarked or boarded, and the ferry can carry only one car at a time. \nThere are 2 locations and 2 cars, numbered consecutively. \nCurrently, the ferry at l0, with the car c1 on board. The cars are at locations as follows: c0 is at l1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. unload the car c1 from the ferry to location l0. \nB. sail from location l1 to location l0. \nC. board the car c1 at location l0 on to the ferry. \nD. debark the car c1 to location l1 from the ferry.",
+      "answer": "A."
+    },
+    {
+      "id": "ferry_ferry-l2-c2_p01_6",
+      "group": "applicable_actions_mc",
+      "context": "This is a ferry domain, where the task is to transport cars from their start to their goal locations, using a ferry. Each location is accessible by ferry from each other location. The cars can be debarked or boarded, and the ferry can carry only one car at a time. \nThere are 2 locations and 2 cars, numbered consecutively. \nCurrently, the ferry at l1, with the car c1 on board. The cars are at locations as follows: c0 is at l1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. unload the car c0 from the ferry to location l0. \nB. travel by sea from location l0 to location l1. \nC. embark the car c1 at location l0 on to the ferry. \nD. travel by sea from location l1 to location l0.",
+      "answer": "D."
+    }
+  ]
+]

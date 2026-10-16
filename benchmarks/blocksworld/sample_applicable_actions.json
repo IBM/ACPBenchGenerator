@@ -1,0 +1,46 @@
+[
+  [
+    {
+      "id": "blocksworld_BW-rand-3_p01_0",
+      "group": "applicable_actions_mc",
+      "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 3 blocks. \nCurrently, the robotic arm is empty. The following blocks are on the table: block_1, block_3. The following blocks are stacked on top of another block: block_2 is on block_1.  \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. unstack object block_1 from object block_3. \nB. stack object block_1 on top of object block_3. \nC. stack object block_3 on top of object block_3. \nD. unstack the object block_2 from the object block_1.",
+      "answer": "D."
+    },
+    {
+      "id": "blocksworld_BW-rand-3_p01_1",
+      "group": "applicable_actions_mc",
+      "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 3 blocks. \nCurrently, the robotic arm is holding block_2. The following blocks are on the table: block_1, block_3. .  \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. place the object block_2 on top of the object block_3. \nB. stack the object block_1 on top of the object block_2. \nC. place the object block_3 on top of the object block_2. \nD. unstack object block_2 from object block_3.",
+      "answer": "A."
+    },
+    {
+      "id": "blocksworld_BW-rand-3_p01_2",
+      "group": "applicable_actions_mc",
+      "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 3 blocks. \nCurrently, the robotic arm is empty. The following blocks are on the table: block_2, block_1, block_3. .  \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. place the object block_1 on the table. \nB. stack object block_3 on top of object block_2. \nC. remove block_1 from table. \nD. unstack the object block_2 from the object block_2.",
+      "answer": "C."
+    },
+    {
+      "id": "blocksworld_BW-rand-3_p01_3",
+      "group": "applicable_actions_mc",
+      "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 3 blocks. \nCurrently, the robotic arm is holding block_1. The following blocks are on the table: block_2, block_3. .  \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. remove the object block_1 from on top of the object block_1. \nB. unstack object block_2 from object block_2. \nC. place the object block_1 on the table. \nD. unstack object block_1 from object block_3.",
+      "answer": "C."
+    },
+    {
+      "id": "blocksworld_BW-rand-3_p01_4",
+      "group": "applicable_actions_mc",
+      "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 3 blocks. \nCurrently, the robotic arm is empty. The following blocks are on the table: block_2, block_3. The following blocks are stacked on top of another block: block_1 is on block_3.  \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. stack object block_1 on top of object block_1. \nB. stack the object block_3 on top of the object block_2. \nC. unstack the object block_3 from the object block_2. \nD. unstack the object block_1 from the object block_3.",
+      "answer": "D."
+    },
+    {
+      "id": "blocksworld_BW-rand-3_p01_5",
+      "group": "applicable_actions_mc",
+      "context": "This is a blocksworld domain where blocks can be placed on top of each other or on the table. There is one robotic arm that can move the block. \nThere are 3 blocks. \nCurrently, the robotic arm is holding block_2. The following blocks are on the table: block_3. The following blocks are stacked on top of another block: block_1 is on block_3.  \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. stack the object block_1 on top of the object block_2. \nB. place the object block_1 on the table. \nC. stack the object block_3 on top of the object block_2. \nD. place the object block_2 on the table.",
+      "answer": "D."
+    }
+  ]
+]

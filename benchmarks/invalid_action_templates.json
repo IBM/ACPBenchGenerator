@@ -1,0 +1,358 @@
+{
+  "blocksworld": {
+    "pick-up": [
+      "pick up gold at loc {?ob}",
+      "pick up the gold from location {?ob}",
+      "pick up gold at location {?ob}",
+      "retrieve gold from location {?ob}"
+    ],
+    "put-down": [
+      "pick up the bomb at loc {?ob}",
+      "pick up bomb at loc {?ob}",
+      "pick up the bomb at location {?ob}",
+      "retrieve the bomb from location {?ob}"
+    ],
+    "stack": [
+      "acquire the key {?ob} from the place {?underob}",
+      "pick up key {?ob} from place {?underob}",
+      "retrieve the key {?ob} from its current position {?underob}"      
+    ],
+    "unstack": [
+      "place the key {?ob} at the current position {?underob}",
+      "put the key {?ob} at the current position place {?underob}.",
+      "put down key {?ob} at current position place {?underob}",
+      "put down the key {?ob} at the current position {?underob}",
+      "place the key {?ob} at the current position place {?underob}"      
+    ]
+  },
+  "depot": {
+    "drive": [
+      "sail the boat {?x} from {?y} to {?z}",
+      "navigate the boat {?x} from the place {?y} to the place {?z}",
+      "navigate the boat {?x} from location {?y} to location {?z}",
+      "navigate the boat {?x} from place {?y} to place {?z}",
+      "sail boat {?x} from place {?y} to place {?z}"
+    ],
+    "drop": [
+      "push the crate {?y} from the hoist {?x} onto the surface {?z} at the place {?p}",
+      "inspect the crate {?y} on the surface {?z} at the place {?p} using the hoist {?x}"
+    ],
+    "lift": [
+      "push the crate {?y} from the hoist {?x} onto the surface {?z} at the place {?p}",
+      "store the crate {?y} on the surface {?z} at place {?p}"
+    ],
+    "load": [
+      "use the hoist {?x} to place {?p} on truck {?z}",
+      "pack hoist {?x} into crate {?y} in truck {?z} at place {?p}"
+    ],
+    "unload": [
+      "unload the hoist {?x} from crate {?y} in truck {?z} into location {?p}",
+      "open crate {?y} in truck {?z} at the place {?p}"
+    ]
+  },
+  "ferry": {
+    "board": [
+      "embark the car {?car} at location {?loc} into the airplane",
+      "load the car {?car} at location {?loc} into the airplane",
+      "board the car {?car} at location {?loc} into the airplane"
+    ],
+    "debark": [
+      "debark the car {?car} from the airplane to location {?loc}",
+      "debark car {?car} to location {?loc} from the airplane",
+      "unload the car {?car} from the airplane to location {?loc}",
+      "debark the car {?car} to location {?loc} from the airplane"
+    ],
+    "sail": [
+      "drive from location {?from} to location {?to}",
+      "fly from location {?from} to location {?to}"
+    ]
+  },
+  "floortile": {
+    "change-color": [
+      "repaint the car {?r} from color {?c} to color {?c2}",
+      "load the color {?c} into the robot {?r} instead of color {?c2}"
+    ],
+    "down": [
+      "unload robot {?r} from tile {?x} to tile {?y}",
+      "move the crate {?r} from the tile {?x} to the tile {?y} going downwards"
+    ],
+    "left": [
+      "move the crate {?r} from the tile {?x} to the tile on its left {?y}",
+      "unload truck {?r} from tile {?x} to tile {?y} to its left"
+    ],
+    "paint-down": [
+      "use truck {?r} to load the tile {?y} downwards from the tile {?x} with the color {?c}"
+    ],
+    "paint-up": [
+      "use truck {?r} to load the tile {?y} above the tile {?x} with the color {?c}"
+    ],
+    "right": [
+      "move the package {?r} from the tile {?x} to the tile {?y} which is to the right of the tile {?x}",
+      "move crate {?r} from tile {?x} to the right tile tile {?y}",
+      "navigate truck {?r} from city {?x} to city {?y}"
+    ],
+    "up": [
+      "move the crate {?r} from tile {?x} to tile {?y} going upwards",
+      "move package {?r} up from tile {?x} to tile {?y}"
+    ]
+  },
+  "goldminer": {
+    "detonate-bomb": [
+      "check bomb at loc {?x} connected to loc {?y}",
+      "check the bomb at location {?x} connected to location {?y}"
+    ],
+    "fire-laser": [
+      "calibrate the laser in location {?x} at location {?y}",
+      "aim the telescope from location {?x} to location {?y}",
+      "direct the telescope from location {?x} to location {?y}"
+    ],
+    "move": [
+      "move agent {?x} to loc {?y}",
+      "connect location {?x} to location {?y}"
+    ],
+    "pick-gold": [
+      "pick up treasure at loc {?x}",
+      "pick up diamonds from location {?x}",
+      "bury gold in location {?x}"
+    ],
+    "pickup-bomb": [
+      "put down the bomb at loc {?x}",
+      "pick up key at loc {?x}"
+    ],
+    "pickup-laser": [
+      "buy laser from store {?x}",
+      "set up the taser at location {?x}"
+    ],
+    "putdown-laser": [
+      "sell the laser to lab {?x}",
+      "put down the crate at location {?x}"
+    ]
+  },
+  "grid": {
+    "move": [
+      "fly from the current position {?curpos} to the next position {?nextpos}",
+      "move to city {?nextpos} from city {?curpos}"
+    ],
+    "pickup": [
+      "pick up apple {?key} from bowl {?curpos}",
+      "assign key {?key} to {?curpos}"
+    ],
+    "pickup-and-loose": [
+      "get the fruit {?newkey} from the current position {?curpos} while dropping the vegetable {?oldkey}",
+      "carry {?newkey} from place {?curpos} to place {?oldkey}"
+    ],
+    "putdown": [
+      "destroy the key {?key} at the current position {?curpos}",
+      "paint the key {?key} at the current position place {?curpos}",
+      "put down apple {?key} into fridge at place {?curpos}"
+    ],
+    "unlock": [
+      "lock place {?lockpos} with key {?key} of shape {?shape} from current position place {?curpos}",
+      "lock the place {?lockpos} with key {?key} of shape {?shape} from the current position place {?curpos}",
+      "use the key {?key} of shape {?shape} to lock the place {?lockpos} from the current position {?curpos}"
+    ]
+  },
+  "grippers": {
+    "drop": [
+      "use robot {?r} with gripper {?obj} to place the object {?g} in room {?room}",
+      "use the {?g} gripper of robot {?r} to stack the object {?obj} on top of room {?room}"
+    ],
+    "move": [
+      "fly drone {?r} from room {?from} to room {?to}",
+      "fly the drone {?r} from room {?from} to room {?to}"
+    ],
+    "pick": [
+      "pick up the object {?obj} with robot {?r} using {?g} gripper from the table {?room}",
+      "unstack the object {?obj} with the robot {?r} using the {?g} gripper from the room {?room}"
+    ]
+  },
+  "logistics": {
+    "drive-truck": [
+      "sail the ship {?truck} into city {?city} from location {?loc-from} in city {?loc-to}",
+      "navigate the truck {?truck} from location {?loc-from} in city {?city} to location {?loc-to} in the next city"
+    ],
+    "fly-airplane": [
+      "taxi airplane {?airplane} from gate {?loc-from} to gate {?loc-to}",
+      "fly the airplane {?airplane} to the airport {?loc-from} in city {?loc-to}"
+    ],
+    "load-airplane": [
+      "place the object {?obj} onto the cupboard {?airplane} at location {?loc}",
+      "load the laundry {?obj} at location {?loc} into the dishwasher {?airplane}"
+    ],
+    "load-truck": [
+      "unstack {?obj} from crate {?loc} into the truck {?truck}",
+      "inspect {?obj} in truck {?truck} at location {?loc}"
+    ],
+    "unload-airplane": [
+      "inspect the object {?obj} in the airplane {?airplane} at location {?loc}",
+      "use {?obj} to inspect the airplane {?airplane} at location {?loc}"
+    ],
+    "unload-truck": [
+      "unstack {?obj} from crate {?loc} into the truck {?truck}",
+      "inspect {?obj} in truck {?truck} at location {?loc}"
+    ]
+  },
+  "rovers": {
+    "calibrate": [
+      "install the camera {?i} on the rover {?r} for the objective {?t} at the waypoint {?w}",
+      "switch camera {?i} on rover {?r} for objective {?t} at waypoint {?w}",
+      "replace the camera {?i} on the rover {?r} for the objective {?t} at waypoint {?w}"
+    ],
+    "communicate_image_data": [
+      "inspect objective {?o} in mode {?m} from rover {?r} at waypoint {?x} to lander {?l} at waypoint {?y}",
+      "target {?o} with laser in mode {?m} from rover {?r} at waypoint {?x} to lander {?l} at waypoint {?y}"
+    ],
+    "communicate_rock_data": [
+      "set line of sight from rover {?r} at waypoint {?x} to the lander {?l} at waypoint {?y} via waypoint {?p}",
+      "drive rover {?r} from waypoint {?x} to lander {?l} at waypoint {?y} via waypoint {?p}"
+    ],
+    "communicate_soil_data": [
+      "check line of sight from rover {?r} at waypoint {?x} to the lander {?l} at waypoint {?y} via waypoint {?p}",
+      "inspect rover {?r} at waypoint {?x}"
+    ],
+    "drop": [
+      "wash store {?y} of the rover {?x}",
+      "fix wheel {?y} of rover {?x}"
+    ],
+    "navigate": [
+      "dig with rover {?x} to waypoint {?z} from waypoint {?y}",
+      "use the rover {?x} to connect waypoint {?y} to waypoint {?z}"
+    ],
+    "sample_rock": [
+      "drill a sample at waypoint {?p} with rover {?x} using store {?s}",
+      "take a sample from the store {?s} of rover {?x} and leave it at waypoint {?p}"
+    ],
+    "sample_soil": [
+      "take a sample from the store {?s} of rover {?x} and leave it at waypoint {?p}",
+      "use rover {?x} to set up store {?s} at waypoint {?p}"
+    ],
+    "take_image": [
+      "shoot laser at objective {?o} in mode {?m} using instrument {?i} on the rover {?r} from the waypoint {?p}",
+      "pick up objective {?o} in mode {?m} using instrument {?i} mounted on the rover {?r} from the waypoint {?p}"
+    ]
+  },
+  "satellite": {
+    "calibrate": [
+      "install the camera {?i} on the satellite {?s} to face direction {?d}",
+      "replace instrument {?i} on the satellite {?s} for direction {?d}"
+    ],
+    "switch_off": [
+      "remove instrument {?i} from satellite {?s}",
+      "clean instrument {?i} on board the satellite {?s}"
+    ],
+    "switch_on": [
+      "activate the satellite {?s} using instrument {?i}",
+      "fix instrument {?i} on the satellite {?s}"
+    ],
+    "take_image": [
+      "fire laser in direction {?d} in mode {?m} using the instrument {?i} on satellite {?s}",
+      "turn instrument {?i} on satellite {?s} in direction {?d}"
+    ],
+    "turn_to": [
+      "move cargo on satellite {?s} from {?d_prev} to {?d_new}",
+      "transfer weight on satellite {?s} from section {?d_prev} to section {?d_new}"
+    ]
+  },
+  "swap": {
+    "swap": [
+      "meet {?a1} with {?a2} while holding {?r1} and {?r2}",
+      "marry {?a1} with {?a2} using {?r1} and {?r2}",
+      "drive {?a1} and {?a2} from {?r1} to {?r2}"
+    ]
+  },
+  "visitall": {
+    "move": [
+      "check that position {?curpos} is connected to position {?nextpos}",
+      "push box to place {?nextpos} from place {?curpos}"
+    ]
+  },
+  "alfworld": {
+    "go_to_location": [
+      "agent {?a} sails from the current position {?lstart} to the next position {?lend} with receptacle {?r}",
+      "agent {?a} navigates a plane from the current position {?lstart} to the next position {?lend} that has a receptacle {?r}",
+      "agent {?a} pushes a receptacle {?r} from the current location {?lstart} to the next location {?lend}"
+    ],
+    "open_receptacle": [
+      "rover {?a} turns into receptacle {?r} while at location {?l}",
+      "while at location {?l}, rover {?a} turns into receptacle {?r}",
+      "agent {?a} looks at receptacle {?r} while at location {?l}",
+      "rover {?a} takes a picture of the receptacle {?r} while at location {?l}"
+    ],
+    "close_receptacle": [
+      "rover {?a} turns into receptacle {?r} while at location {?l}",
+      "rover {?a} looks at receptacle {?r} while at location {?l}",
+      "agent {?a} examines receptacle {?r} while at location {?l}"
+    ],
+    "pickup_object_from_not_openable_receptacle": [
+      "agent {?a} examines object {?o} from receptacle {?r} while at location {?l}",
+      "rover {?a} grasps object {?o} from waypoint {?r} at location {?l}"
+    ],
+    "pickup_object_from_openable_receptacle": [
+      "agent {?a} examines object {?o} from receptacle {?r} while at location {?l}",
+      "rover {?a} grasps object {?o} from waypoint {?r} at location {?l}"
+    ],
+    "put_object_in_openable_receptacle": [
+      "agent {?a}  boards person {?o} with luggage {?ot} and person {?r} with luggage {?rt} at location {?l}",
+      "agent {?a}  fixes instrument {?o} with type {?ot} and instrument {?r} with type {?rt} at location {?l}"
+    ],
+    "put_object_on_not_openable_receptacle": [
+      "agent {?a}  boards person {?o} with luggage {?ot} and person {?r} with luggage {?rt} at location {?l}",
+      "agent {?a}  fixes instrument {?o} with type {?ot} and instrument {?r} with type {?rt} at location {?l}"
+    ],
+    "clean_object": [
+      "agent {?a} examines an object {?o} in a sink {?r} at location {?l}",
+      "rover {?a} samples object {?o} in a waypoint {?r} at location {?l}"
+    ],
+    "cool_object": [
+      "rover {?a}  takes a picture of object {?o} with a camera {?r} at location {?l}",
+      "rover {?a}  fixes object {?o} with a hammer {?r} at location {?l}",
+      "agent {?a}  paints object {?o} with an object {?r} at location {?l}"
+    ],
+    "heat_object": [
+       "rover {?a} takes a picture of object {?o} with a camera {?r} at location {?l}",
+       "agent {?a} fires laser {?o} to with direction {?r} at location {?l}",
+       "agent {?a}  drives plane {?o} with speed {?r} to location {?l}"
+    ],
+    "toggle_object_on": [
+      "rover {?a} examines a sampled object {?o) that is in its inventory {?r} at location {?l}",
+      "agent {?a} takes a picture of object {?o) that is on receptacle {?r} while at location {?l}"
+    ],
+    "toggle_object_off": [
+      "rover {?a} examines a sampled object {?o) that is in its inventory {?r} at location {?l}",
+      "agent {?a} takes a picture of object {?o) that is on receptacle {?r} while at location {?l}"
+    ],
+    "slice_object": [
+      "agent {?a} paints object {?co} with a paint brush {?ko} at location {?l}",
+      "agent {?a} takes a picture of object {?co} with a camera {?ko} at location {?l}"
+    ],
+    "validate_pick_and_place_in_receptacle": [
+      "check that rover {?r} places object {?o} of type {?ot} in a location {?rt}",
+      "ensure that rover {?r} places object {?o} of type {?ot} in a location {?rt}",
+      "validate that rover {?r} places object {?o} of type {?ot} in a location {?rt}"
+    ],
+    "validate_examine_in_light": [
+      "check that agent {?a} fixes an object {?otoggle} of type {?otogglet} with a tool {?o} of type {?ot} and places it in receptacle {?r} at location {?l}",
+      "validate that agent {?a} fixes an object {?otoggle} of type {?otogglet} with a tool {?o} of type {?ot} and places it in receptacle {?r} at location {?l}"
+    ],
+    "validate_clean_and_place_in_receptacle": [
+      "check that object {?o} of type {?ot} is loaded on to a plane {?r} at location {?rt}",
+      "validate that object {?o} of type {?ot} is unstacked from object {?r} of type {?rt}",
+      "ensure that object {?o} of type {?ot} is in a ferry {?r} at location {?rt}"
+    ],
+    "validate_heat_and_place_in_receptacle": [
+        "check that camera {?o} with lense {?ot} is pointing to object {?r} at location {?rt}",
+        "validate that object {?o} of type {?ot} is unstacked from object {?r} of type {?rt}",
+        "ensure that object {?o} of type {?ot} is stacked on top of object {?r} of type {?rt}"
+    ],
+    "validate_cool_and_place_in_receptacle": [
+        "check that picture {?o} of type {?ot} is taken by camera {?r} with lense {?rt}",
+        "validate that picture {?o} of type {?ot} is taken by camera {?r} with lense {?rt}",
+        "ensure that block {?o} of color {?ot} is on top of block {?r} of color {?rt}"
+    ],
+    "validate_pick_two_and_place_in_receptacle": [
+      "investigate that the two objects {?o1} and {?o2} of type {?ot} and type {?rt} are in a box {?r}",
+      "validate that the two objects {?o1} and {?o2} of type {?ot} and type {?rt} are in a box {?r}",
+      "move two objects {?o1} and {?o2} of type {?ot} and type {?rt} to location {?r}"
+    ]
+  }
+}

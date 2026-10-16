@@ -1,7 +1,7 @@
 # MAINTAINERS
 
-Mo McElaney - mmcelaney@us.ibm.com
+Michael Katz - michael.katz1@ibm.com
 
-JJ Asghar - jja@ibm.com
+Harsha Kokel - harsha.kokel@ibm.com
 
-Brad Topol - btopol@us.ibm.com
+Shirin Sohrabi - ssohrab@us.ibm.com

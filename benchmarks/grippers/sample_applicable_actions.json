@@ -1,0 +1,46 @@
+[
+  [
+    {
+      "id": "grippers_gripper-1-2-4_p01_0",
+      "group": "applicable_actions_mc",
+      "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 2 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1 and both grippers are free. Additionally, ball4 and ball3 are at room2, ball1 and ball2 are at room1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. drop the object ball4 in the gripper rgripper1 of the robot robot1 at the room robot1oom. \nB. use the gripper lgripper1 of robot robot1 to pick up the object ball2 from room robot1oom. \nC. move robot robot1 from room room2 to room room1. \nD. grasp the object ball2 from room robot1oom with the gripper rgripper1 of robot robot1.",
+      "answer": "D."
+    },
+    {
+      "id": "grippers_gripper-1-2-4_p01_1",
+      "group": "applicable_actions_mc",
+      "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 2 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room2 and both grippers are free. Additionally, ball4 and ball3 are at room2, ball1 and ball2 are at room1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. pick up the object ball4 with robot robot1 using gripper rgripper1 from room robot1oom. \nB. move the robot robot1 from room room1 to room room1. \nC. drop the object ball4 in room robot1oom using robot robot1 with gripper lgripper1. \nD. pick up the object ball1 with the robot robot1 using the gripper lgripper1 from the room robot1oom.",
+      "answer": "A."
+    },
+    {
+      "id": "grippers_gripper-1-2-4_p01_2",
+      "group": "applicable_actions_mc",
+      "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 2 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room2, right gripper is free, and left gripper is carrying the ball ball3. Additionally, ball4 is at room2, ball1 and ball2 are at room1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. pick up the object ball2 with robot robot1 using gripper lgripper1 from room robot1oom. \nB. place the object ? obj  in the room robot1oom using the robot robot1 with gripper lgripper1. \nC. place the object ball1 in the room robot1oom from the gripper lgripper1 of the robot robot1. \nD. drop the object ball3 in the gripper lgripper1 of the robot robot1 at the room robot1oom.",
+      "answer": "D."
+    },
+    {
+      "id": "grippers_gripper-1-2-4_p01_3",
+      "group": "applicable_actions_mc",
+      "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 2 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room2, left gripper is carrying the ball ball3, and right gripper is carrying the ball ball4. Additionally, ball1 and ball2 are at room1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. place the object ball4 in the room robot1oom from the gripper rgripper1 of the robot robot1. \nB. pick up the object ball3 with the robot robot1 using the gripper lgripper1 from the room robot1oom. \nC. place the object ? obj  in the room robot1oom using the robot robot1 with gripper rgripper1. \nD. grasp the object ball2 from room robot1oom with the gripper rgripper1 of robot robot1.",
+      "answer": "A."
+    },
+    {
+      "id": "grippers_gripper-1-2-4_p01_4",
+      "group": "applicable_actions_mc",
+      "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 2 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1, left gripper is carrying the ball ball3, and right gripper is carrying the ball ball4. Additionally, ball1 and ball2 are at room1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. place the object ball2 in the room robot1oom from the gripper rgripper1 of the robot robot1. \nB. pick up the object ball4 with robot robot1 using gripper rgripper1 from room robot1oom. \nC. use the gripper rgripper1 of robot robot1 to pick up the object ball2 from room robot1oom. \nD. drop object ball4 in room robot1oom using robot robot1 with gripper rgripper1.",
+      "answer": "D."
+    },
+    {
+      "id": "grippers_gripper-1-2-4_p01_5",
+      "group": "applicable_actions_mc",
+      "context": "This is a grippers domain, where there is a robot with two grippers. The robot can carry a ball in each. The goal is to take the balls from one room to another. \nThere are 1 robot, 2 rooms, and 4 balls, numbered consecutively. \nCurrently, the robot robot1 is at room1, right gripper is free, and left gripper is carrying the ball ball3. Additionally, ball1, ball4, and ball2 are at room1. \n",
+      "inputs": "Which of the following actions will be applicable in this state?\nA. use the gripper rgripper1 of robot robot1 to pick up the object ball1 from room robot1oom. \nB. pick up the object ball1 with robot robot1 using gripper rgripper1 from room robot1oom. \nC. pick up the object ball3 with the robot robot1 using the gripper rgripper1 from the room robot1oom. \nD. use the gripper rgripper1 of robot robot1 to drop the object ball1 in room robot1oom.",
+      "answer": "A."
+    }
+  ]
+]

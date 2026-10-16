@@ -1,0 +1,55 @@
+#!/bin/sh
+#
+# Makefile for basic examples
+#
+
+
+####### FLAGS
+
+TYPE	=
+ADDONS	=
+
+CC      = gcc
+
+CFLAGS	= -O3 -Wall -g -ansi $(TYPE) $(ADDONS)
+# -g -pg
+
+LIBS    = -lm
+
+
+SOURCES 	= hanoi.c
+
+OBJECTS 	= $(SOURCES:.c=.o)
+
+####### Implicit rules
+
+.SUFFIXES:
+
+.SUFFIXES: .c .o
+
+.c.o:; $(CC) -c $(CFLAGS) $<
+
+####### Build rules
+
+
+hanoi: $(OBJECTS)
+	$(CC) -o hanoi $(OBJECTS) $(CFLAGS) $(LIBS)
+
+test: hanoi
+	./hanoi -n 3 > $${PDDL_TEST_DIR}/p01.pddl
+
+# misc
+clean:
+	rm -f *.o *.bak *~ *% core *_pure_p9_c0_400.o.warnings \
+        \#*\# $(RES_PARSER_SRC) $(PDDL_PARSER_SRC)
+
+veryclean: clean
+	rm -f hanoi H* J* K* L* O* graph.* *.symbex gmon.out \
+	$(PDDL_PARSER_SRC) \
+	lex.fct_pddl.c lex.ops_pddl.c lex.probname.c \
+	*.output
+
+lint:
+	lclint -booltype Bool $(SOURCES) 2> output.lint
+
+# DO NOT DELETE

@@ -1,0 +1,518 @@
+{
+  "blocksworld": {
+    "pick-up": [
+      "pick up the object {?ob} from the table",
+      "collect the object {?ob} from the table",
+      "pick up object {?ob} from the table",
+      "remove {?ob} from table"
+    ],
+    "put-down": [
+      "put down the object {?ob}",
+      "place the object {?ob} on the table",
+      "put down object {?ob}"
+    ],
+    "stack": [
+      "stack object {?ob} on top of object {?underob}",
+      "stack the object {?ob} on top of the object {?underob}",
+      "place the object {?ob} on top of the object {?underob}"
+    ],
+    "unstack": [
+      "unstack object {?ob} from object {?underob}",
+      "remove the object {?ob} from on top of the object {?underob}",
+      "unstack the object {?ob} from the object {?underob}"
+    ]
+  },
+  "depot": {
+    "drive": [
+      "drive the truck {?x} from {?y} to {?z}",
+      "navigate the truck {?x} from the place {?y} to the place {?z}",
+      "navigate the truck {?x} from location {?y} to location {?z}",
+      "navigate the truck {?x} from place {?y} to place {?z}",
+      "drive truck {?x} from place {?y} to place {?z}"
+    ],
+    "drop": [
+      "drop the crate {?y} from the hoist {?x} onto the surface {?z} at the place {?p}",
+      "place the crate {?y} on the surface {?z} at the place {?p} using the hoist {?x}",
+      "lower the crate {?y} from the hoist {?x} onto the surface {?z} at the place {?p}",
+      "lower the crate {?y} from the hoist {?x} and place it on the surface {?z} at location {?p}",
+      "drop crate {?y} from hoist {?x} onto surface {?z} at place {?p}"
+    ],
+    "lift": [
+      "lift the crate {?y} from the surface {?z} at place {?p} using the hoist {?x}",
+      "use the hoist {?x} to lift the crate {?y} from the surface {?z} at location {?p}",
+      "lift crate {?y} from surface {?z} at place {?p} using hoist {?x}",
+      "lift the crate {?y} from the ground {?z} at position {?p} using the hoist {?x}",
+      "use hoist {?x} to lift crate {?y} from surface {?z} at place {?p}"
+    ],
+    "load": [
+      "use the hoist {?x} to lift and place the crate {?y} from place {?p} into the truck {?z}",
+      "use hoist {?x} to load crate {?y} into truck {?z} at place {?p}",
+      "load the crate {?y} into the truck {?z} at the place {?p} with the hoist {?x}",
+      "load crate {?y} into truck {?z} at place {?p} with hoist {?x}",
+      "load the crate {?y} from place {?p} with hoist {?x} into the truck {?z}"
+    ],
+    "unload": [
+      "use the hoist {?x} to unload the crate {?y} from the truck {?z} at location {?p}",
+      "unload the crate {?y} from the truck {?z} at the place {?p} using the hoist {?x}",
+      "unload crate {?y} from truck {?z} at place {?p} using hoist {?x}"
+    ]
+  },
+  "ferry": {
+    "board": [
+      "embark the car {?car} at location {?loc} on to the ferry",
+      "load the car {?car} at location {?loc} on to the ferry",
+      "board car {?car} at location {?loc}",
+      "board the car {?car} at the location {?loc}",
+      "board the car {?car} at location {?loc}",
+      "board the car {?car} at location {?loc} on to the ferry"
+    ],
+    "debark": [
+      "debark the car {?car} from the ferry to location {?loc}",
+      "debark car {?car} to location {?loc} from the ferry",
+      "unload the car {?car} from the ferry to location {?loc}",
+      "debark the car {?car} to location {?loc} from the ferry"
+    ],
+    "sail": [
+      "sail from location {?from} to location {?to}",
+      "travel by sea from location {?from} to location {?to}"
+    ]
+  },
+  "floortile": {
+    "change-color": [
+      "change the color of robot {?r} from color {?c} to color {?c2}",
+      "modify the color of the robot {?r} from {?c} to {?c2}",
+      "alter the color of the robot {?r} from color {?c} to color {?c2}"
+    ],
+    "down": [
+      "move robot {?r} down from tile {?x} to tile {?y}",
+      "move the robot {?r} from the tile {?x} to the tile {?y} going downwards"
+    ],
+    "left": [
+      "move the robot {?r} from the tile {?x} to the tile on its left {?y}",
+      "navigate robot {?r} from tile {?x} to tile {?y} to its left",
+      "move the robot {?r} from tile {?x} to the left tile {?y}",
+      "move robot {?r} from tile {?x} to the left tile tile {?y}"
+    ],
+    "paint-down": [
+      "use robot {?r} to paint the tile {?y} downwards from the tile {?x} with the color {?c}",
+      "paint the tile {?y} down from tile {?x} with color {?c} using the robot {?r}",
+      "apply color {?c} to tile {?y} which is below tile {?x} using robot {?r}",
+      "paint tile {?y} down from tile {?x} with color {?c} using robot {?r}"
+    ],
+    "paint-up": [
+      "use robot {?r} to paint the tile {?y} above the tile {?x} with the color {?c}",
+      "apply color {?c} to tile {?y} above tile {?x} using robot {?r}",
+      "paint the tile {?y} above the tile {?x} with color {?c} using the robot {?r}",
+      "paint tile {?y} above tile {?x} with color {?c} using robot {?r}"
+    ],
+    "right": [
+      "move the robot {?r} from the tile {?x} to the tile {?y} which is to the right of the tile {?x}",
+      "move robot {?r} from tile {?x} to the right tile tile {?y}",
+      "navigate robot {?r} from tile {?x} to tile {?y} to the right",
+      "move the robot {?r} from tile {?x} to the right tile {?y}"
+    ],
+    "up": [
+      "move the robot {?r} from tile {?x} to tile {?y} going upwards",
+      "move robot {?r} up from tile {?x} to tile {?y}",
+      "move the robot {?r} up from tile {?x} to tile {?y}",
+      "move the robot {?r} from tile {?x} to tile {?y} upwards"
+    ]
+  },
+  "goldminer": {
+    "detonate-bomb": [
+      "detonate bomb at loc {?x} connected to loc {?y}",
+      "detonate the bomb at location {?x} connected to location {?y}",
+      "trigger the explosion of the bomb at location {?x}, which is connected to location {?y}"
+    ],
+    "fire-laser": [
+      "fire the laser from location {?x} to location {?y}",
+      "fire laser from loc {?x} to loc {?y}",
+      "aim the laser from location {?x} to location {?y}",
+      "direct the laser from location {?x} to location {?y}"
+    ],
+    "move": [
+      "move to location {?y} from location {?x}",
+      "move from loc {?x} to loc {?y}",
+      "travel from location {?x} to location {?y}",
+      "move from location {?x} to location {?y}"
+    ],
+    "pick-gold": [
+      "pick up gold at loc {?x}",
+      "pick up the gold from location {?x}",
+      "pick up gold at location {?x}",
+      "retrieve gold from location {?x}"
+    ],
+    "pickup-bomb": [
+      "pick up the bomb at loc {?x}",
+      "pick up bomb at loc {?x}",
+      "pick up the bomb at location {?x}",
+      "retrieve the bomb from location {?x}"
+    ],
+    "pickup-laser": [
+      "acquire the laser from location {?x}",
+      "pick up the laser at location {?x}",
+      "pick up laser at loc {?x}",
+      "pick up the laser at loc {?x}"
+    ],
+    "putdown-laser": [
+      "place the laser at location {?x}",
+      "put down the laser at location {?x}",
+      "put down laser at loc {?x}"
+    ]
+  },
+  "grid": {
+    "move": [
+      "travel from the current position {?curpos} to the next position {?nextpos}",
+      "move to place {?nextpos} from place {?curpos}",
+      "move from {?curpos} to {?nextpos}",
+      "move from place {?curpos} to place {?nextpos}",
+      "transition from the current position {?curpos} to the next position {?nextpos}"
+    ],
+    "pickup": [
+      "acquire the key {?key} from the place {?curpos}",
+      "pick up key {?key} from place {?curpos}",
+      "retrieve the key {?key} from its current position {?curpos}"
+    ],
+    "pickup-and-loose": [
+      "pick up the key {?newkey} from the current position {?curpos} and loose the key {?oldkey} which is being held",
+      "pick up key {?newkey} at current position place {?curpos} and loose key {?oldkey} being held",
+      "pick up the key {?newkey} at the current position place {?curpos} and loose the key {?oldkey} being held"
+    ],
+    "putdown": [
+      "place the key {?key} at the current position {?curpos}",
+      "put the key {?key} at the current position place {?curpos}",
+      "put down key {?key} at current position place {?curpos}",
+      "put down the key {?key} at the current position {?curpos}",
+      "place the key {?key} at the current position place {?curpos}"
+    ],
+    "unlock": [
+      "unlock place {?lockpos} with key {?key} of shape {?shape} from current position place {?curpos}",
+      "unlock the place {?lockpos} with key {?key} of shape {?shape} from the current position place {?curpos}",
+      "use the key {?key} of shape {?shape} to unlock the place {?lockpos} from the current position {?curpos}",
+      "unlock the place {?lockpos} with the key {?key} of the shape {?shape} from the current position place {?curpos}",
+      "use the key {?key} of shape {?shape} to unlock the place {?lockpos} from its current position {?curpos}"
+    ]
+  },
+  "grippers": {
+    "drop": [
+      "use robot {?r} with {?g} gripper to place the object {?obj} in room {?room}",
+      "use the {?g} gripper of robot {?r} to drop the object {?obj} in room {?room}",
+      "place the object {?obj} in the room {?room} from the {?g} gripper of the robot {?r}",
+      "drop the object {?obj} in room {?room} using robot {?r} with the {?g} gripper",
+      "drop the object {?obj} in the {?g} gripper of the robot {?r} at the room {?room}",
+      "drop object {?obj} in room {?room} using {?g} gripper of robot {?r}",
+      "place the object {?obj} in the room {?room} using the robot {?r} with {?g} gripper"
+    ],
+    "move": [
+      "move robot {?r} from room {?from} to room {?to}",
+      "move the robot {?r} from room {?from} to room {?to}",
+      "transfer the robot {?r} from the room {?from} to the room {?to}",
+      "transfer the robot {?r} from room {?from} to room {?to}"
+    ],
+    "pick": [
+      "pick up the object {?obj} with robot {?r} using {?g} gripper from room {?room}",
+      "pick up the object {?obj} with the robot {?r} using the {?g} gripper from the room {?room}",
+      "use the robot {?r} equipped with {?g} gripper to retrieve the object {?obj} from room {?room}",
+      "grasp the object {?obj} from room {?room} with the {?g} gripper of robot {?r}",
+      "pick up object {?obj} with robot {?r} using {?g} gripper from room {?room}",
+      "use the {?g} gripper of robot {?r} to pick up the object {?obj} from room {?room}"
+    ]
+  },
+  "logistics": {
+    "drive-truck": [
+      "drive the truck {?truck} in city {?city} from location {?loc-from} to location {?loc-to}",
+      "navigate the truck {?truck} from location {?loc-from} in city {?city} to location {?loc-to} in the same city",
+      "navigate the truck {?truck} from its current location {?loc-from} in city {?city} to the new location {?loc-to} within the same city",
+      "drive truck {?truck} from location {?loc-from} in city {?city} to location {?loc-to} in the same city",
+      "navigate the truck {?truck} which is in location {?loc-from} in city {?city} to another location {?loc-to} in the same city"
+    ],
+    "fly-airplane": [
+      "fly airplane {?airplane} from airport {?loc-from} to airport {?loc-to}",
+      "fly the airplane {?airplane} from the airport {?loc-from} to the airport {?loc-to}",
+      "operate the airplane {?airplane} from airport {?loc-from} to airport {?loc-to}",
+      "fly the airplane {?airplane} from location {?loc-from} to location {?loc-to}",
+      "fly the airplane {?airplane} from airport {?loc-from} to airport {?loc-to}"
+    ],
+    "load-airplane": [
+      "place the object {?obj} onto the airplane {?airplane} at location {?loc}",
+      "load the object {?obj} from location {?loc} into the airplane {?airplane}",
+      "load the object {?obj} from location {?loc} onto the airplane {?airplane}",
+      "load object {?obj} into airplane {?airplane} at location {?loc}"
+    ],
+    "load-truck": [
+      "load the object {?obj} from location {?loc} into the truck {?truck}",
+      "load object {?obj} into truck {?truck} at location {?loc}",
+      "place the object {?obj} into the truck {?truck} at location {?loc}"
+    ],
+    "unload-airplane": [
+      "offload the object {?obj} from the airplane {?airplane} at location {?loc}",
+      "unload object {?obj} from airplane {?airplane} at location {?loc}",
+      "remove the object {?obj} from the airplane {?airplane} and place it on the location {?loc}",
+      "unload the object {?obj} from the airplane {?airplane} at location {?loc}"
+    ],
+    "unload-truck": [
+      "offload the object {?obj} from the truck {?truck} at location {?loc}",
+      "unload the object {?obj} from the truck {?truck} at location {?loc}",
+      "remove the object {?obj} from the truck {?truck} and place it on the location {?loc}",
+      "unload object {?obj} from truck {?truck} at location {?loc}"
+    ]
+  },
+  "rovers": {
+    "calibrate": [
+      "calibrate the camera {?i} on the rover {?r} for the objective {?t} at the waypoint {?w}",
+      "calibrate camera {?i} on rover {?r} for objective {?t} at waypoint {?w}",
+      "adjust the camera {?i} on the rover {?r} for the objective {?t} at waypoint {?w}",
+      "calibrate the camera {?i} on rover {?r} for the objective {?t} at the waypoint {?w}",
+      "calibrate the camera {?i} on the rover {?r} for the objective {?t} at waypoint {?w}"
+    ],
+    "communicate_image_data": [
+      "communicate image data of objective {?o} in mode {?m} from rover {?r} at waypoint {?x} to lander {?l} at waypoint {?y}",
+      "communicate the image data of target {?o} in mode {?m} from rover {?r} at waypoint {?x} to lander {?l} at waypoint {?y}",
+      "communicate the image data of objective {?o} in mode {?m} from rover {?r} at waypoint {?x} to lander {?l} at waypoint {?y}",
+      "transmit image data of objective {?o} in mode {?m} from rover {?r} at waypoint {?x} to the lander {?l} at waypoint {?y}",
+      "transmit the image data of the objective {?o} in mode {?m} from the rover {?r} at waypoint {?x} to the lander {?l} at waypoint {?y}"
+    ],
+    "communicate_rock_data": [
+      "communicate the rock data from the rover {?r} at waypoint {?x} to the lander {?l} at waypoint {?y} via waypoint {?p}",
+      "communicate the rock data from rover {?r} at waypoint {?x} to lander {?l} at waypoint {?y} via waypoint {?p}",
+      "transmit the rock data from the rover {?r} at waypoint {?x} to the lander {?l} at waypoint {?y} using waypoint {?p} as a relay",
+      "communicate rock data from rover {?r} at waypoint {?x} about waypoint {?p} to lander {?l} at waypoint {?y}",
+      "communicate rock data from rover {?r} at waypoint {?x} to lander {?l} at waypoint {?y} via waypoint {?p}",
+      "transmit the rock data from rover {?r} at waypoint {?x} to the lander {?l} at waypoint {?y} through waypoint {?p}"
+    ],
+    "communicate_soil_data": [
+      "transmit soil data from rover {?r} at waypoint {?x} to the lander {?l} at waypoint {?y}, regarding the soil analysis of waypoint {?p}",
+      "communicate soil data from rover {?r} at waypoint {?x} with soil analysis of waypoint {?p} to lander {?l} at waypoint {?y}",
+      "transmit soil data from rover {?r} located at waypoint {?x} to lander {?l} located at waypoint {?y} using soil analysis of waypoint {?p}",
+      "communicate the soil data from the rover {?r} at waypoint {?x} with the soil analysis of waypoint {?p} to the lander {?l} at waypoint {?y}",
+      "communicate the soil data from rover {?r} at waypoint {?x} with the soil analysis of waypoint {?p} to lander {?l} at waypoint {?y}"
+    ],
+    "drop": [
+      "empty the content from store {?y} of the rover {?x}",
+      "drop store {?y} of rover {?x}",
+      "drop from store {?y} of rover {?x}",
+      "unload the store {?y} from the rover {?x}",
+      "drop the content from store {?y} of the rover {?x}",
+      "if store{y} is full, drop store {?y} of rover {?x}",
+      "empty the store {?y} from rover {?x}"
+    ],
+    "navigate": [
+      "navigate with rover {?x} to waypoint {?z} from waypoint {?y}",
+      "guide the rover {?x} from waypoint {?y} to waypoint {?z}",
+      "navigate with rover {?x} from waypoint {?y} to waypoint {?z}",
+      "navigate the rover {?x} from waypoint {?y} to waypoint {?z}",
+      "navigate rover {?x} from waypoint {?y} to waypoint {?z}",
+      "move the rover {?x} from waypoint {?y} to waypoint {?z}"
+    ],
+    "sample_rock": [
+      "sample the rock at waypoint {?p} with rover {?x} and store it in store {?s}",
+      "collect a sample from the waypoint {?p} using the rover {?x} and store it in the store {?s}",
+      "collect a rock sample from waypoint {?p} using rover {?x} and store it in store {?s}",
+      "sample a rock at waypoint {?p} using rover {?x}, then store it in the storage unit {?s}",
+      "sample rock at waypoint {?p} with rover {?x} and store in store {?s}"
+    ],
+    "sample_soil": [
+      "sample soil at waypoint {?p} with rover {?x} and store in store {?s}",
+      "use the rover {?x} to collect soil samples at waypoint {?p} and store them in the store {?s}",
+      "sample the soil at waypoint {?p} with rover {?x} and store it in store {?s}",
+      "collect a soil sample from waypoint {?p} using rover {?x} and deposit it in the store {?s}",
+      "sample the soil at waypoint {?p} using the rover {?x}, then store it in the storage unit {?s}",
+      "sample soil at waypoint {?p} with rover {?x} and store in the store {?s}"
+    ],
+    "take_image": [
+      "take an image of the objective {?o} in mode {?m} using the camera {?i} on the rover {?r} from the waypoint {?p}",
+      "take a picture of the objective {?o} in mode {?m} using the camera {?i} mounted on the rover {?r} from the waypoint {?p}",
+      "capture an image of objective {?o} in mode {?m} using the camera {?i} on the rover {?r} from waypoint {?p}",
+      "capture an image of the objective {?o} in mode {?m} with the camera {?i} on the rover {?r} at waypoint {?p}",
+      "take an image of objective {?o} in mode {?m} using camera {?i} on rover {?r} from waypoint {?p}"
+    ]
+  },
+  "satellite": {
+    "calibrate": [
+      "calibrate instrument {?i} on the satellite {?s} for direction {?d}",
+      "adjust the direction for instrument {?i} on the satellite {?s} to {?d}",
+      "point the instrument {?i} on the satellite {?s} to direction {?d}",
+      "adjust the instrument {?i} on the satellite {?s} for direction {?d}"
+    ],
+    "switch_off": [
+      "switch off instrument {?i} on board satellite {?s}",
+      "turn off the instrument {?i} on board the satellite {?s}",
+      "turn off the instrument {?i} which is on the satellite {?s}",
+      "switch off the instrument {?i} on board the satellite {?s}",
+      "power off the instrument {?i} on the satellite {?s}",
+      "turn off the instrument {?i} on satellite {?s}"
+    ],
+    "switch_on": [
+      "activate the instrument {?i} which is on the satellite {?s}",
+      "switch on instrument {?i} on the satellite {?s}",
+      "switch on instrument {?i} on board satellite {?s}",
+      "turn on the instrument {?i} on the satellite {?s}",
+      "power on instrument {?i} on the satellite {?s}",
+      "turn on the instrument {?i} on board the satellite {?s}",
+      "activate the instrument {?i} on satellite {?s}"
+    ],
+    "take_image": [
+      "capture an image of direction {?d} in mode {?m} using the instrument {?i} on satellite {?s}",
+      "capture a image of direction {?d} in mode {?m} using the instrument {?i} on the satellite {?s}",
+      "capture an image in direction {?d} in mode {?m} using the instrument {?i} on the satellite {?s}",
+      "take an image of direction {?d} in mode {?m} using instrument {?i} on board satellite {?s}"
+    ],
+    "turn_to": [
+      "change the direction of the satellite {?s} from {?d_prev} to {?d_new}",
+      "turn satellite {?s} from direction {?d_prev} to direction {?d_new}",
+      "turn the satellite {?s} from direction {?d_prev} to direction {?d_new}",
+      "point the satellite {?s} to direction {?d_new} instead of {?d_prev}",
+      "turn the satellite {?s} to the direction {?d_new} from the direction {?d_prev}",
+      "point the satellite {?s} from {?d_prev} direction to new direction {?d_new}",
+      "turn satellite {?s} to point from {?d_prev} direction to {?d_new}",
+      "direct the satellite {?s} to point in the direction {?d_new} instead of {?d_prev}"
+    ]
+  },
+  "swap": {
+    "swap": [
+      "swap {?a1}:{?r1} with {?a2}:{?r2}",
+      "swap {?a1} with {?a2}, {?r1} for {?r2}",
+      "exchange {?r1} of {?a1} with {?r2} of {?a2}",
+      "trade {?r1} of {?a1} for {?r2} of {?a2}"
+    ]
+  },
+  "visitall": {
+    "move": [
+      "travel from the current position {?curpos} to the next position {?nextpos}",
+      "move to place {?nextpos} from place {?curpos}",
+      "navigate from {?curpos} to {?nextpos}",
+      "travel from {?curpos} to {?nextpos}",
+      "move from {?curpos} to {?nextpos}",
+      "Please move to {?nextpos} position from {?curpos} position",
+      "go to {?nextpos} from {?curpos}",
+      "move from place {?curpos} to place {?nextpos}",
+      "transition from the current position {?curpos} to the next position {?nextpos}"
+    ]
+  },
+  "alfworld": {
+    "go_to_location": [
+      "agent {?a} navigates from the current position {?lstart} to the next position {?lend} that has a receptacle {?r}",
+      "agent {?a} goes to receptacle {?r} from the current location {?lstart} to the next location {?lend}",
+      "agent {?a} navigates to the receptacle {?r} from the current location {?lstart} to the next location {?lend}",
+      "agent {?a} moves from the current position {?lstart} to the next position {?lend} that has the receptacle {?r}"
+    ],
+    "open_receptacle": [
+      "agent {?a} opens receptacle {?r} while at location {?l}",
+      "agent {?a} opens receptacle {?r} that is at location {?l}",
+      "agent {?a} that is at location {?l} opens receptacle {?r}"
+    ],
+    "close_receptacle": [
+      "agent {?a} closes receptacle {?r} while at location {?l}",
+      "agent {?a} closes receptacle {?r} that is at location {?l}",
+      "agent {?a} that is at location {?l} closes receptacle {?r}"
+    ],
+    "pickup_object_from_openable_receptacle": [
+      "agent {?a} picks up object {?o} from an openable receptacle {?r} while at location {?l}",
+      "agent {?a} picks up object {?o} from an openable receptacle {?r} that is at location {?l}",
+      "agent {?a} collects object {?o} from an openable receptacle {?r} while at location {?l}",
+      "agent {?a} collects object {?o} from an openable receptacle {?r} that is at location {?l}",
+      "agent {?a} grasps object {?o} from an openable receptacle {?r} while at location {?l}"
+    ],
+    "pickup_object_from_not_openable_receptacle": [
+      "agent {?a} picks up object {?o} from a not openable receptacle {?r} while at location {?l}",
+      "agent {?a} picks up object {?o} from a not openable receptacle {?r} that is at location {?l}",
+      "agent {?a} collects object {?o} from a not openable receptacle {?r} while at location {?l}",
+      "agent {?a} collects object {?o} from a not openable receptacle {?r} that is at location {?l}",
+      "agent {?a} grasps object {?o} from a not openable receptacle {?r} while at location {?l}"
+    ],
+    "put_object_in_openable_receptacle": [
+      "agent {?a} puts down an object {?o} with type {?ot} in an openable receptacle {?r} with type {?rt} at location {?l}",
+      "agent {?a} puts down an object {?o} of type {?ot} in an openable receptacle {?r} of type {?rt} that is at location {?l}",
+      "agent {?a} places object {?o} with type {?ot} in an openable receptacle {?r} with type {?rt} at location {?l}",
+      "agent {?a} places object {?o} of type {?ot} in an openable receptacle {?r} of type {?rt} while at location {?l}"
+    ],
+    "put_object_on_not_openable_receptacle": [
+      "agent {?a} puts down an object {?o} with type {?ot} on a not openable receptacle {?r} with type {?rt} at location {?l}",
+      "agent {?a} puts down an object {?o} of type {?ot} on a not openable receptacle {?r} of type {?rt} that is at location {?l}",
+      "agent {?a} places object {?o} with type {?ot} on a not openable receptacle {?r} with type {?rt} at location {?l}",
+      "agent {?a} places object {?o} of type {?ot} on a not openable receptacle {?r} of type {?rt} while at location {?l}"
+    ],
+    "clean_object": [
+      "agent {?a} cleans a cleanable object {?o} in a sink {?r} at location {?l}",
+      "agent {?a} cleans an object {?o} in a sink {?r} that is in location {?l}",
+      "agent {?a} cleans object {?o} in sink {?r} at location {?l}",
+      "agent {?a} cleans object {?o} in a receptacle {?r} that is at location {?l}"
+    ],
+    "heat_object": [
+      "agent {?a} heats up object {?o} with a microwave {?r} at location {?l}",
+      "agent {?a} heats up object {?o} with a microwave {?r} that is in location {?l}",
+      "agent {?a} warms up object {?o} with a microwave {?r} at location {?l}",
+      "agent {?a} warms up a heatable object {?o} with a receptacle {?r} at location {?l}"
+    ],
+    "cool_object": [
+       "agent {?a} cools down object {?o} in a fridge {?r} at location {?l}",
+       "agent {?a} cools down object {?o} with a receptacle {?r} that is in location {?l}",
+       "agent {?a} chills object {?o} in a fridge  {?r} at location {?l}",
+       "agent {?a} chills a coolable object {?o} in receptacle {?r} at location {?l}"
+    ],
+    "toggle_object_on": [
+      "agent {?a} toggles object {?o} that is on the receptacle {?r} at location {?l}",
+      "agent {?a} turns on object {?o} that is on the receptacle {?r} at location {?l}",
+      "agent {?a} toggles a togglable object {?o} that is on the receptacle {?r} at location {?l}"
+    ],
+    "toggle_object_off": [
+      "agent {?a} toggles object {?o} that is on the receptacle {?r} at location {?l}",
+      "agent {?a} turns off object {?o} that is on the receptacle {?r} at location {?l}",
+      "agent {?a} toggles a togglable object {?o} that is on the receptacle {?r} at location {?l}"
+    ],
+    "slice_object": [
+      "agent {?a} cuts a sliceable object {?co} with a knife {?ko} at location {?l}",
+      "agent {?a} cuts object {?co} with a knife {?ko} at location {?l}",
+      "agent {?a} cuts a sliceable object {?co} that is at location {?l} with a knife {?ko}"
+    ],
+    "validate_pick_and_place_in_receptacle": [
+      "check that object {?o} of type {?ot} is in a receptacle {?r} of type {?rt}",
+      "ensure that object {?o} of type {?ot} is in a receptacle {?r} of type {?rt}",
+      "validate that object {?o} of type {?ot} is in a receptacle {?r} of type {?rt}"
+    ],
+    "validate_examine_in_light": [
+      "check that the togglable object {?otoggle} of type {?otogglet} is toggled and in receptacle {?r} at location {?l} while agent {?a} is holding object {?o} of type {?ot}",
+      "validate that togglable object {?otoggle} of type {?otogglet} is toggled and in receptacle {?r} at location {?l} while agent {?a} is holding object {?o} of type {?ot}",
+      "ensure that object {?otoggle} of type {?otogglet} is toggled and in receptacle {?r} at location {?l} while agent {?a} is holding object {?o} of type {?ot}"
+    ],
+    "validate_clean_and_place_in_receptacle": [
+      "check that object {?o} of type {?ot} is clean and in receptacle {?r} of type {?rt}",
+      "validate that object {?o} of type {?ot} is clean and in receptacle {?r} of type {?rt}",
+      "ensure that object {?o} of type {?ot} is clean and in receptacle {?r} of type {?rt}"
+    ],
+    "validate_heat_and_place_in_receptacle": [
+        "check that object {?o} of type {?ot} is hot and in receptacle {?r} of type {?rt}",
+        "validate that object {?o} of type {?ot} is hot and in receptacle {?r} of type {?rt}",
+        "ensure that object {?o} of type {?ot} is hot and in receptacle {?r} of type {?rt}",
+        "check that object {?o} of type {?ot} is warmed up and in receptacle {?r} of type {?rt}",
+        "validate that object {?o} of type {?ot} is warmed up  and in receptacle {?r} of type {?rt}",
+        "ensure that object {?o} of type {?ot} is warmed up  and in receptacle {?r} of type {?rt}"
+    ],
+    "validate_cool_and_place_in_receptacle": [
+        "check that object {?o} of type {?ot} is cool and in receptacle {?r} of type {?rt}",
+        "validate that object {?o} of type {?ot} is cool and in receptacle {?r} of type {?rt}",
+        "ensure that object {?o} of type {?ot} is cool and in receptacle {?r} of type {?rt}",
+        "check that object {?o} of type {?ot} is chilled and in receptacle {?r} of type {?rt}",
+        "validate that object {?o} of type {?ot} is colded down  and in receptacle {?r} of type {?rt}",
+        "ensure that object {?o} of type {?ot} is chilled and in receptacle {?r} of type {?rt}"
+    ],
+    "validate_pick_two_and_place_in_receptacle": [
+      "check that the two objects {?o1} and {?o2} of the same type {?ot} are in receptacle {?r} of type {?rt}",
+      "validate that the two objects {?o1} and object {?o2} of the same type {?ot} are in receptacle {?r} of type {?rt}",
+      "ensure that the two objects {?o1} and object {?o2} of the same type {?ot} are in receptacle {?r} of type {?rt}"
+    ]
+  },
+  "hanoi": {
+    "move": ["move disk {?disk} from {?from} to {?to}"]
+  },
+  "random_hanoi": {
+    "move": ["move disk {?disk} from {?from} to {?to}"]
+  },
+  "frogs_jumping": {
+    "slide-right": ["move left frog {?lf} from lily pad {?from} to {?to}", "slide frog {?lf} from lily pad {?from} to {?to}", "slide frog {?lf} to right"],
+    "slide-left": ["move right frog {?rf} from lily pad {?from} to {?to}", "slide frog {?rf} from lily pad {?from} to {?to}", "slide frog {?lf} to left"],
+    "jump-right": ["move left frog {?lf} from lily pad {?from} to {?to} by jumping over {?rf}?", "jump frog {?lf} from lily pad {?from} to {?to}"],
+    "jump-left": ["move right frog {?lf} from lily pad {?from} to {?to} by jumping over {?lf}?", "jump frog {?rf} from lily pad {?from} to {?to}"]
+
+  }
+}
